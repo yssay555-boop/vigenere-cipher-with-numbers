@@ -73,7 +73,13 @@ def main():
         print("----------------------")
         print("1: Encode plain text\n")
         print("2: Decode encrypted text\n")
+        print("3: exit\n")
+
         inpt = input("Enter choice: ")
+        if inpt == "3" : 
+            print("bye!")
+            break
+        
         if (inpt.isdigit()):
             text = input("Enter text: ")
             keyword = input("Enter keyword: ")
